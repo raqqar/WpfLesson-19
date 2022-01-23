@@ -12,10 +12,12 @@
     </Window.DataContext>
     <Grid>
         <StackPanel>
+            <Label Content="Введите радиус:"/>
             <TextBox Text="{Binding Path=Number1}"/>
+            
+            <Button Content="Рассчитать" Command="{Binding Path=AddCommand}"/>
+            <Label Content="Длина окружности равна:"/>
             <TextBox Text="{Binding Path=Number2}"/>
-            <Button Content="Суммировать" Command="{Binding Path=AddCommand}"/>
-            <TextBox Text="{Binding Path=Number3}"/>
         </StackPanel>
     </Grid>
 </Window>
